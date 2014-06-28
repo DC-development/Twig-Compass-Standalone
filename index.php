@@ -8,4 +8,4 @@ $twig = new Twig_Environment($loader, array(
     'debug' => true
 ));
 
-echo $twig->render('index.html.twig', array('name' => 'Fabien, you bastard'));
+echo $twig->render('index.html.twig', array('name' => 'Fabien, my friend'));
