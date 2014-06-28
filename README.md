@@ -6,12 +6,13 @@ Also suggest compass for the css-demo provided - you can of course use everythin
 
 after cloning run
 
-'''''
+```
 $ php composer.phar install
-''''
+```
+
 and
 
-''''
+```
 $ compass compile
-''''
+```
 
