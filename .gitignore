@@ -13,3 +13,4 @@ LICENSE
 package.xml.tpl
 README.markdown
 phpunit.xml.dist
+/templates/_temp/
