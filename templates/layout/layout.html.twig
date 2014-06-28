@@ -10,24 +10,24 @@
     </head>
     <body>
         <div class='two-col'>
-            <div id='header'>
+            <section id='header'>
                 {% block header%}
                     <h1>This is the Header Jo</h1>
                     <h2>{{ name }}</h2>
                 {% endblock header%}   
-            </div>
-            <div id='sidebar'>
+            </section>
+            <section id='sidebar'>
                 {% block navigation %}
                     {% include "components/navigation.html.twig" %}
                 {% endblock navigation %}
-            </div>
-            <div id='content'>
+            </section>
+            <section id='content'>
                 {% block content %}
                 {% endblock content %}
-            </div>
-            <div id='footer'>
+            </section>
+            <section id='footer'>
                 This is the footer.
-            </div>
+            </section>
         </div>  
     </body>
 </html>
