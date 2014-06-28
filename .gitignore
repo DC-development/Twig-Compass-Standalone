@@ -1,0 +1,15 @@
+/.idea/
+/.sass-cache/
+/vendor/
+/lib/
+/ext/
+/doc/
+/bin/
+/stylesheets/
+/test/
+AUTHORS
+CHANGELOG
+LICENSE
+package.xml.tpl
+README.markdown
+phpunit.xml.dist

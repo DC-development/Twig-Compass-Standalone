@@ -1,0 +1,12 @@
+.two-col {
+  @include container;
+  #header, #footer {
+    @include column(16);
+  }
+  #sidebar {
+    @include column(6);
+  }
+  #content {
+    @include column(8, true);
+  }
+}
