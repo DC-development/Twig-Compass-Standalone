@@ -1,6 +1,6 @@
 .two-col {
   @include grid-row();
-  #header, #footer {
+  #header, #footer, #navi {
     @include grid-column(12);
   }
   #sidebar {

@@ -1,22 +1,27 @@
-<!DOCTYPE html>
+{% extends "layout/base.html.twig" %}
+{% block title %}My Foundation site
+{% endblock title %}
+       {% block stylesheets %}
+           <!-- If you are using the gem version, you need this only -->
+           <link rel="stylesheet" href="stylesheets/app.css">
+       {% endblock stylesheets %}
 
-<html>
-    <head>
-        <link href="/stylesheets/app.css" media="screen, projection" rel="stylesheet" type="text/css" />
-      
-    </head>
-    <body>
-        <div class='two-col'>
-            <section id='header'>
-                {% block header%}
-                    <h1>This is the Header Jo</h1>
-                    <h2>{{ name }}</h2>
-                {% endblock header%}   
-            </section>
-            <section id='sidebar'>
+        {% block body %}
+        <div class='two-col'> 
+            <section id="navi">
                 {% block navigation %}
                     {% include "components/navigation.html.twig" %}
                 {% endblock navigation %}
+            </section>
+            <section id='header'>
+                {% block header%}
+                    {% include "components/carousel.html.twig" %}
+                {% endblock header%}
+            </section>
+            <section id='sidebar'>
+                {% block sidebar %}
+                   Sidebar
+                {% endblock sidebar %}
             </section>
             <section id='content'>
                 {% block content %}
@@ -26,13 +31,19 @@
                 This is the footer.
             </section>
         </div>
-        <script src="bower_components/foundation/js/vendor/jquery.js"></script>
-        <script src="bower_components/foundation/js/vendor/zepto.js"></script>
+        {% endblock body %}
 
+        {% block javascripts %}  
+        <script src="bower_components/foundation/js/vendor/jquery.js"></script>
         <script src="bower_components/foundation/js/foundation/foundation.js"></script>
+        
         <script src="bower_components/foundation/js/foundation/foundation.orbit.js"></script>
+        <script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
+        <script src="bower_components/foundation/js/foundation/foundation.joyride.js"></script>
+        <script src="/bower_components/foundation/js/foundation/foundation.tab.js"></script>
+        <script src="bower_components/foundation/js/vendor/jquery.cookie.js"></script>
+   
         <script>
             $(document).foundation();
         </script>
-    </body>
-</html>
+        {% endblock javascripts %}
