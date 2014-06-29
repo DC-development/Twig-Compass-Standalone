@@ -6,12 +6,12 @@
 .two-col {
   @extend .row;
   #header, #footer, #navi {
-    @extend .col-md-12;
+    @extend .col-xs-12;
   }
   #sidebar {
-    @extend .col-md-2;
+    @extend .col-xs-2;
   }
   #content {
-    @extend .col-md-10;
+    @extend .col-xs-10;
   }
 }
