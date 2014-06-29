@@ -8,4 +8,10 @@ $twig = new Twig_Environment($loader, array(
     'debug' => true
 ));
 
-echo $twig->render('index.html.twig', array('name' => 'Fabien, my friend'));
+if(isset($_GET['p'])) {
+    $page = $_GET['p'];
+}else{
+    $page = "index";
+}
+
+echo $twig->render("$page.html.twig", array('name' => 'Fabien, my friend'));

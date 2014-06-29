@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+        <!--[if IE]>
+        <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <![endif]-->
+    </head>
+    <body>
+        <div class='two-col'>
+            <section id='header'>
+                {% block header%}
+                    <h1>This is the Header Jo</h1>
+                    <h2>{{ name }}</h2>
+                {% endblock header%}   
+            </section>
+            <section id='sidebar'>
+                {% block navigation %}
+                    {% include "components/navigation.html.twig" %}
+                {% endblock navigation %}
+            </section>
+            <section id='content'>
+                {% block content %}
+                {% endblock content %}
+            </section>
+            <section id='footer'>
+                This is the footer.
+            </section>
+        </div>  
+    </body>
+</html>
