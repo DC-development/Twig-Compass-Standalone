@@ -11,7 +11,7 @@ $twig = new Twig_Environment($loader, array(
 if(isset($_GET['p'])) {
     $page = $_GET['p'];
 }else{
-    $page = "index";
+    $page = "forms";
 }
 
 echo $twig->render("$page.html.twig", array('name' => 'Fabien, my friend'));
