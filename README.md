@@ -18,7 +18,7 @@ cd path/to/your-project
 $ bower install foundation
 ```
 
-ad this to your config.rb file
+Add this to your config.rb file
 
 ```
 add_import_path "bower_components/foundation/scss"
