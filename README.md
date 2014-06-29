@@ -5,16 +5,11 @@ You'll need composer to install twig.
 in this Branch youll also need bower
 Also suggest compass for the css-demo provided - you can of course use everything else though.
 
-after cloning run
+after cloning, cd to your project and run
 
 ```
 $ php composer.phar install
-$ [sudo] gem install foundation
-```
-
-Then cd to your project and run
-
-```
+$ [sudo] gem install bootstrap-sass
 $ bower install bootstrap-sass
 ```
 
