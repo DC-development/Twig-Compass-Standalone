@@ -14,3 +14,8 @@ package.xml.tpl
 README.markdown
 phpunit.xml.dist
 /templates/_temp/
+
+/foundation/.sass-cache/
+/foundation/bower-components/
+/foundation/js/
+/foundation/stylesheets/
