@@ -7,43 +7,45 @@
        {% endblock stylesheets %}
 
         {% block body %}
-        <div class='two-col'> 
-            <section id="navi">
-                {% block navigation %}
-                    {% include "components/navigation.html.twig" %}
-                {% endblock navigation %}
-            </section>
-            <section id='header'>
-                {% block header%}
-                    {% include "components/carousel.html.twig" %}
-                {% endblock header%}
-            </section>
-            <section id='sidebar'>
-                {% block sidebar %}
-                   Sidebar
-                {% endblock sidebar %}
-            </section>
-            <section id='content'>
-                {% block content %}
-                {% endblock content %}
-            </section>
-            <section id='footer'>
-                This is the footer.
-            </section>
-        </div>
+            <div id="container">
+                <div class='two-col'>
+                    <section id="navi">
+                        {% block navigation %}
+                            {% include "components/bootstrap/navigation.html.twig" %}
+                        {% endblock navigation %}
+                    </section>
+                    <section id='header'>
+                        {% block header%}
+                            {% include "components/bootstrap/jumbotron.html.twig" %}
+                        {% endblock header%}
+                    </section>
+                    <section id='sidebar'>
+                        {% block sidebar %}
+                            Sidebar
+                        {% endblock sidebar %}
+                    </section>
+                    <section id='content'>
+                        {% block content %}
+                        {% endblock content %}
+                    </section>
+                    <section id='footer'>
+                        This is the footer.
+                    </section>
+                </div>
+            </div>
         {% endblock body %}
 
-        {% block javascripts %}  
-        <script src="bower_components/foundation/js/vendor/jquery.js"></script>
-        <script src="bower_components/foundation/js/foundation/foundation.js"></script>
-        
-        <script src="bower_components/foundation/js/foundation/foundation.orbit.js"></script>
-        <script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
-        <script src="bower_components/foundation/js/foundation/foundation.joyride.js"></script>
-        <script src="/bower_components/foundation/js/foundation/foundation.tab.js"></script>
-        <script src="bower_components/foundation/js/vendor/jquery.cookie.js"></script>
-   
-        <script>
-            $(document).foundation();
-        </script>
+        {% block javascripts %}
+            <script src="bower_components/foundation/js/vendor/jquery.js"></script>
+            <script src="bower_components/foundation/js/foundation/foundation.js"></script>
+
+            <script src="bower_components/foundation/js/foundation/foundation.orbit.js"></script>
+            <script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
+            <script src="bower_components/foundation/js/foundation/foundation.joyride.js"></script>
+            <script src="/bower_components/foundation/js/foundation/foundation.tab.js"></script>
+            <script src="bower_components/foundation/js/vendor/jquery.cookie.js"></script>
+
+            <script>
+                $(document).foundation();
+            </script>
         {% endblock javascripts %}
