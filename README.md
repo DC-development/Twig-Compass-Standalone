@@ -2,7 +2,7 @@
 ###Dummy building environment for compass/twig
 
 You'll need composer to install twig.
-in this Branch youll also need bower
+In this Branch youll also need Bower.
 Also suggest compass for the css-demo provided - you can of course use everything else though.
 
 after cloning, cd to your project and run
