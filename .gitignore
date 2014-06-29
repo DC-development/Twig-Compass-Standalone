@@ -19,3 +19,4 @@ phpunit.xml.dist
 /foundation/bower-components/
 /foundation/js/
 /foundation/stylesheets/
+/bower_components/
