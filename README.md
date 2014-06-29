@@ -9,7 +9,7 @@ after cloning, cd path/to/your-project and run
 
 ```
 $ php composer.phar install
-$ [sudo] gem install zurb-foundation
+$ [sudo] gem install foundation
 $ bower install foundation
 ```
 
