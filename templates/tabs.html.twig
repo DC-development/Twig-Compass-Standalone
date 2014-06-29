@@ -1,6 +1,6 @@
 {% extends "layout/layout.html.twig" %}
 {% block content %}
-    {% include "components/bootstrap/tab.html.twig" %}
+    {% include "components/bootstrap/tab.html.twig" with { 'tabData' : tabData } %}
 {% endblock content %}
         
 

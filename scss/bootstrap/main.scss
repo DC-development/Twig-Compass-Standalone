@@ -24,3 +24,12 @@
   margin: 16px 0 0 0; 
 }
 
+.tabPane {
+  @extend .panel; 
+  @extend .panel-default; 
+  @extend .panel-body; 
+  border-top: 0;
+  margin-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

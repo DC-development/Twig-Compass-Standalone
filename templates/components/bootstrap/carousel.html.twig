@@ -1,23 +1,19 @@
-
-<!-- Carousel
-================================================== -->
-
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->    
     <ol class="carousel-indicators">
-        {% for n in sliderData %}
-         <li data-target="#myCarousel" data-slide-to="{{ loop.index-1 }}" class="{% if loop.first %}active{% endif %}"></li>
+        {% for key, slide in sliderData %}
+         <li data-target="#myCarousel" data-slide-to="{{ key }}" class="{% if loop.first %}active{% endif %}"></li>
         {% endfor %}
     </ol>
     <div class="carousel-inner">
-        {% for n in sliderData %}
+        {% for key, slide in sliderData %}
             <div class="item {% if loop.first %}active{% endif %}">
-                <img data-src="{{  n.image }}" alt="Generic placeholder thumbnail">
+                <img data-src="{{  slide.image }}" alt="Generic placeholder thumbnail">
                 <div class="container">
                     <div class="carousel-caption">
-                        {% if n.caption is defined %}<h1>{{  n.caption }}</h1>{% endif %}
-                        {% if n.text is defined %}<p>{{  n.text }}</p>{% endif %}
-                        {% if n.target is defined %} <p><a class="btn btn-lg btn-primary" href="{{  n.target }}" role="button">{{ n.btntext }}</a></p>{% endif %}
+                        {% if slide.caption is defined %}<h1>{{  slide.caption }}</h1>{% endif %}
+                        {% if slide.text is defined %}<p>{{ slide.text }}</p>{% endif %}
+                        {% if slide.target is defined %} <p><a class="btn btn-lg btn-primary" href="{{  slide.target }}" role="button">{{ slide.btntext }}</a></p>{% endif %}
                     </div>
                 </div>
             </div>
@@ -25,4 +21,4 @@
     </div>
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-</div><!-- /.carousel -->
+</div>

@@ -18,4 +18,7 @@ if(isset($_GET['p'])) {
     $page = "forms";
 }
 
-echo $twig->render("$page.html.twig", array('sliderData' => $sliderData));
+echo $twig->render("$page.html.twig", array(
+    'sliderData' => $sliderData,
+    'tabData' => $tabData
+));
