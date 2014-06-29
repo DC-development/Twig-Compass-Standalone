@@ -4,9 +4,9 @@
     @include column(16);
   }
   #sidebar {
-    @include column(6);
+    @include column(4);
   }
   #content {
-    @include column(8, true);
+    @include column(12, true);
   }
 }
