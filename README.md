@@ -9,8 +9,7 @@ after cloning run
 
 ```
 $ php composer.phar install
-
-$ [sudo] gem update zurb-foundation
+$ [sudo] gem install zurb-foundation
 ```
 
 and
